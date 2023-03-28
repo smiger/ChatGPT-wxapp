@@ -1,0 +1,7 @@
+{
+	"navigationBarTitleText": "聊天机器人",
+	"enablePullDownRefresh" : true,
+	"backgroundTextStyle" : "dark",
+	"usingComponents": {
+	}
+}

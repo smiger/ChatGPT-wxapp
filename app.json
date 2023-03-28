@@ -1,0 +1,60 @@
+{
+    "pages": [
+        "pages/index/index",
+		"pages/tool/tool",
+		"pages/ribaozhoubao/index",
+		"pages/wenzhang/index",
+		"pages/wenan/index",
+		"pages/fangan/index",
+		"pages/jiantaoshu/index",
+		"pages/code/index",
+		"pages/liyou/index",
+		"pages/pingjia/index",
+		"pages/gerenzongjie/index",
+		"pages/haowumiaoshu/index",
+		"pages/kendejiv50/index",
+		"pages/about/index",
+		"pages/login/index",
+		"pages/chat/index",
+		"pages/eatwhat/index",
+		"pages/story/index",
+		"pages/yingyihan/index",
+        "pages/mine/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#449f45",
+        "navigationBarTitleText": "智能生成工具",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+         "color": "#666666",
+         "selectedColor": "#449f45",
+        "backgroundColor": "#ffffff",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [
+			{
+			    "pagePath": "pages/index/index",
+			    "text": "首页",
+			    "iconPath": "icons/icon-index.png",
+			    "selectedIconPath": "icons/icon-index-selected.png"
+			},
+
+			{
+			    "pagePath": "pages/mine/index",
+			    "text": "我的",
+			    "iconPath": "icons/icon-mine.png",
+			    "selectedIconPath": "icons/icon-mine-selected.png"
+			}
+        ]
+    },
+    "networkTimeout": {
+        "request": 300000,
+        "downloadFile": 300000
+    },
+    "subPackages": [
+        
+    ],
+    "sitemapLocation": "sitemap.json"
+}

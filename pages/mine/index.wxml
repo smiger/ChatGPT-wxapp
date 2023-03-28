@@ -1,0 +1,52 @@
+<view class="mine_index">
+    <view bindtap="getProfile" class="mine_info">
+        <image class="user_avatar" mode="widthFix" src="{{!hasUserInfo?'/img/logo.png':userInfo.avatarUrl}}"></image>
+        <view class="user_info">
+            <view class="user_name"> {{!hasUserInfo?'点击授权':userInfo.nickName}} </view>
+            <view class="user_hint"> {{!hasUserInfo?'授权获取头像昵称':soul.title}} </view>
+        </view>
+    </view>
+	
+	<view bindtap="logout" class="mine_info">
+		<view class="logout"> {{userKey && userInfo?'退出登录':""}}</view>
+	</view>
+	
+    <view class="mine_setup">
+        <view class="setup_wrap">
+            <text class="iconfont icon-share"></text>
+            <view class="setup_name">推荐给好友</view>
+            <text class="iconfont icon-right"></text>
+            <button openType="share"></button>
+        </view>
+        <!-- <view class="setup_wrap">
+            <text class="iconfont icon-wechat"></text>
+            <view class="setup_name">联系客服</view>
+            <text class="iconfont icon-right"></text>
+            <button openType="contact"></button>
+        </view> -->
+<!--        <view class="home_swiper">
+            <ad adTheme="white" adType="video" unitId="adunit-8f852f6b8fb762d7"></ad>
+        </view> -->
+		
+		<view bindtap="showPic" class="tip_line" style="height: 100rpx;flex-direction: column">
+		    <text>反馈意见/联系</text>
+		</view>
+	
+    </view>
+	
+	<view class = "my_index">
+		<view style="height:10rpx;"></view>
+		<!-- <view class="more_hint">作者：七里香</view> -->
+		<!-- <view class="more_hint">地址：</view> -->
+		
+		<view wx:for="{{messages}}" wx:key="index">
+			<view class="more_hint">{{item.content}}</view>
+		</view>	
+		
+	</view>
+	
+	<!-- <view class = "my_index">
+		<view class="more_hint">😽已成功生成：{{reqdata.sum}}</view>
+	</view> -->
+	
+</view>
